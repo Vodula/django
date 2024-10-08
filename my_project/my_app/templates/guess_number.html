@@ -1,0 +1,11 @@
+<h1>Guess the Number (1-100)</h1>
+<form method="post">
+    {% csrf_token %}
+    <input type="number" name="guess" required>
+    <button type="submit">Guess</button>
+</form>
+<p>{{ message }}</p>
+<br>
+<a href="/">Go to Home</a>
+<br>
+<a href="/about/">Go to About</a>
